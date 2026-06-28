@@ -15,7 +15,9 @@
       --muted: #5f6368;
       --line: #ded8ea;
     }
+
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -23,11 +25,13 @@
       color: var(--text);
       line-height: 1.5;
     }
+
     header {
       border-bottom: 5px solid var(--purple);
       background: white;
       padding: 28px 7vw;
     }
+
     .brand {
       display: flex;
       align-items: center;
@@ -35,6 +39,7 @@
       max-width: 1100px;
       margin: 0 auto;
     }
+
     .logo {
       width: 88px;
       height: 88px;
@@ -47,24 +52,29 @@
       font-size: 42px;
       font-weight: 800;
       box-shadow: 0 8px 20px rgba(0,0,0,.15);
+      flex-shrink: 0;
     }
+
     h1 {
       margin: 0;
       color: var(--purple);
       font-size: clamp(32px, 5vw, 52px);
       line-height: 1.05;
     }
+
     .subtitle {
       color: var(--muted);
       font-size: 18px;
       margin-top: 8px;
       max-width: 850px;
     }
+
     main {
       max-width: 1100px;
       margin: 32px auto;
       padding: 0 20px 60px;
     }
+
     .notice {
       background: #fff8df;
       border-left: 6px solid var(--gold);
@@ -73,36 +83,42 @@
       margin-bottom: 28px;
       font-weight: 600;
     }
+
     .section-title {
       color: var(--purple);
       font-size: 28px;
       margin: 28px 0 14px;
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 18px;
     }
+
     .card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 18px;
       padding: 22px;
       box-shadow: 0 6px 20px rgba(75, 46, 131, .08);
-      min-height: 210px;
+      min-height: 220px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
+
     .card h3 {
       color: var(--purple);
       margin: 0 0 8px;
       font-size: 22px;
     }
+
     .card p {
       color: var(--muted);
       margin: 0 0 16px;
     }
+
     .tag {
       display: inline-block;
       background: #eee7fb;
@@ -113,6 +129,7 @@
       font-weight: 700;
       margin-bottom: 12px;
     }
+
     a.button {
       display: inline-block;
       background: var(--purple);
@@ -123,11 +140,16 @@
       font-weight: 700;
       width: fit-content;
     }
-    a.button:hover { background: #351d65; }
+
+    a.button:hover {
+      background: #351d65;
+    }
+
     .placeholder {
       background: #f5f1fc;
       border: 1px dashed #a995ce;
     }
+
     footer {
       border-top: 1px solid var(--line);
       padding-top: 24px;
@@ -135,8 +157,21 @@
       color: var(--muted);
       font-size: 14px;
     }
+
+    @media (max-width: 650px) {
+      .brand {
+        align-items: flex-start;
+      }
+
+      .logo {
+        width: 64px;
+        height: 64px;
+        font-size: 30px;
+      }
+    }
   </style>
 </head>
+
 <body>
   <header>
     <div class="brand">
@@ -160,13 +195,24 @@
     <div class="grid">
       <section class="card">
         <div>
+          <span class="tag">Course Artifact</span>
+          <h3>GIDA Social Studies Assessment Series</h3>
+          <p>
+            Full Kindergarten Social Studies assessment portfolio for CKLA Knowledge Domain 5: Farms, including assessment philosophy, components, scoring guides, accommodations, alignment, and appendices.
+          </p>
+        </div>
+        <a class="button" href="https://parisideon0530-oss.github.io/GIDA-Social-Studies/GIDA%20Social%20Studies.pdf" target="_blank" rel="noopener noreferrer">Open Social Studies PDF</a>
+      </section>
+
+      <section class="card">
+        <div>
           <span class="tag">Interactive Prototype</span>
           <h3>GIDA Labs: Assessment Investigation 001</h3>
           <p>
             An interactive professional-learning module exploring when assessment measures student knowledge and when it measures access.
           </p>
         </div>
-        <a class="button" href="https://parisideon0530-oss.github.io/GIDA-labs-assessment-investigation/">Open Assessment Investigation</a>
+        <a class="button" href="https://parisideon0530-oss.github.io/GIDA-labs-assessment-investigation/" target="_blank" rel="noopener noreferrer">Open Assessment Investigation</a>
       </section>
 
       <section class="card">
@@ -177,40 +223,51 @@
             A digital scoring and reporting dashboard for the Kindergarten Farms assessment series.
           </p>
         </div>
-        <a class="button" href="https://parisideon0530-oss.github.io/GIDA-digital/">Open Digital Dashboard</a>
+        <a class="button" href="https://parisideon0530-oss.github.io/GIDA-digital/" target="_blank" rel="noopener noreferrer">Open Digital Dashboard</a>
       </section>
 
-      <section class="card placeholder">
+      <section class="card">
         <div>
-          <span class="tag">Course Artifact</span>
-          <h3>Social Studies Portfolio</h3>
+          <span class="tag">Assessment Design</span>
+          <h3>Assessment Philosophy & Purpose</h3>
           <p>
-            Placeholder for the Social Studies portfolio, capstone submission, or final PDF link.
+            The framework emphasizes multiple forms of evidence, developmentally appropriate response formats, and the importance of separating content understanding from unnecessary literacy or language barriers.
           </p>
         </div>
-        <a class="button" href="#">Link Coming Soon</a>
+        <a class="button" href="https://parisideon0530-oss.github.io/GIDA-Social-Studies/GIDA%20Social%20Studies.pdf" target="_blank" rel="noopener noreferrer">View in PDF</a>
       </section>
 
-      <section class="card placeholder">
+      <section class="card">
         <div>
-          <span class="tag">Unit Planning</span>
-          <h3>Social Studies Unit Plans</h3>
+          <span class="tag">Alignment</span>
+          <h3>CAS & CKLA Alignment Matrix</h3>
           <p>
-            Placeholder for Kindergarten social studies unit planning documents and CKLA-aligned resources.
+            Alignment between CKLA Farms assessment components and Colorado Academic Standards for Kindergarten Economics, Civics, and Geography.
           </p>
         </div>
-        <a class="button" href="#">Link Coming Soon</a>
+        <a class="button" href="https://parisideon0530-oss.github.io/GIDA-Social-Studies/GIDA%20Social%20Studies.pdf" target="_blank" rel="noopener noreferrer">View Alignment</a>
       </section>
 
-      <section class="card placeholder">
+      <section class="card">
         <div>
-          <span class="tag">Reflection</span>
-          <h3>Course Reflections</h3>
+          <span class="tag">Scoring</span>
+          <h3>Performance Continuum & Rubrics</h3>
           <p>
-            Placeholder for reflection papers, assessment rationale, or professional connections.
+            Includes performance levels from Entering to Bridging, master score summary sheets, and condensed rubric references for efficient scoring.
           </p>
         </div>
-        <a class="button" href="#">Link Coming Soon</a>
+        <a class="button" href="https://parisideon0530-oss.github.io/GIDA-Social-Studies/GIDA%20Social%20Studies.pdf" target="_blank" rel="noopener noreferrer">View Scoring Tools</a>
+      </section>
+
+      <section class="card">
+        <div>
+          <span class="tag">Accessibility</span>
+          <h3>Accommodations & Response Supports</h3>
+          <p>
+            Documentation tools for visual supports, repeated directions, native language clarification, pointing, oral responses, drawing, AAC, extended time, and setting accommodations.
+          </p>
+        </div>
+        <a class="button" href="https://parisideon0530-oss.github.io/GIDA-Social-Studies/GIDA%20Social%20Studies.pdf" target="_blank" rel="noopener noreferrer">View Supports</a>
       </section>
 
       <section class="card placeholder">
